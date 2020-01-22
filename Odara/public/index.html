@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Tudodecarros</title>
+    <style>
+      ::placeholder { 
+      color:black;
+      opacity: 1;
+    }
+    .bg-modal{
+      width: 100%;
+      height: 300%;
+      background-color: rgb(0, 0, 0,0.7);
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;  
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .modal-content{
+      width: 500px;
+      height: 300px;
+      background-color: white;
+      border-radius: 10px;
+      border: solid gray;
+      text-align: center;
+      padding: 20px;
+    }
+    .close{
+      position:absolute;
+      top: 0;
+      right: 14px;
+      font-size: 42px;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+    </style>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <br><br>
+    <a href="index.html">
+    <img  src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" 
+    style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+    </a>
+    <blockquote class="blockquote text-center">
+      <h3 class="blockquote-footer">Seu Blog sobre o mundo do automóvel</h3>
+    </blockquote>
+  </head>
+  <body>
+  <div class="container-fluid" style="background-color:#F7F8FD; opacity: 30%; z-index: -4; ">
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link" href="#" style="color: black;"><p class="h4"> Sobre nós </p></a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#" style="color: black;"><p class="h4"> Meu carro</p></a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#" style="color: black;"><p class="h4"> Testes</p></a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#" style="color: black;"><p class="h4"> Tendencias</p></a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#" style="color: black;"><p class="h4"> Como negociar</p></a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#" style="color: black;"><p class="h4"> Materiais</p></a>
+    </nav>
+    <br>
+    <br>
+    <div style="background-color: #C7D0D8;justify-content: center; display: flex;margin: 40px; ">
+      <div class="row">
+        <img src="image/Venda de carro.jpg"class="col-6">
+        <div class="col-4">
+          <br><br>
+          <p class="h4">Algumas dicas para vender o seu carro usado</p> <br>
+          <p class="h5">Com a crise econômica vivida pelo país nos últimos anos, é comum imaginar que seria muito difícil conseguir um comprador...</p>
+          <br>
+          <a href="Dicas de venda.html" style="border-radius: 11px;background-color: blue;color: white;width: 39%;text-align: center;border: blue solid 8px;">Leia Mais</a>
+          <br><br><br>
+        </div>
+      </div>
+      <br>
+    </div>
+    <br><br>
+
+    <div class="container" style="background-color: white;border-radius: 15px;width: 65%;">
+      <blockquote class="blockquote text-center">
+        <p class="h2">COMO VENDER SEU CARRO NA INTERNET</p>
+        <p class="mb-0">Baixe seu e-book grátis</p>
+        <form class="text-center" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+          <input  name="name"
+                  type="text"
+                  pattern="^\D{2,}\s[\D\s]{2,}$"
+                  title="Digite seu nome completo"
+                  style="border: unset;background-color: #EEEFED;border-radius: 8px;"
+                  placeholder="Nome completo"
+                  required >
+          
+          <input  name="email"
+                  type="email"
+                  style="border: unset;background-color: #EEEFED;border-radius: 8px;"
+                  title="Digite um email válido"
+                  required placeholder="E-mail">
+          <br>
+          <br>
+          <input type="submit" style="color:white; background-color: #FF5D54; border-color: #E05358; border-radius: 13px; width: 20%;">
+            <br><br>
+        </form>
+      </blockquote>
+
+      
+    </div>
+    <br>
+  
+    <div style="display: flex; flex-direction: row; justify-content: center;">
+
+      <div style="margin: 10px; text-align: center;">
+        <a href="Mercado de semi.html"><img src="image/semi-novo-e-usado.png" alt="Responsive image" style="width: 70%;"></a>
+        <br>
+        <p class="h1">Mercado de seminovos</p>
+        <p class="h6">Existem algumas empresas que buscaram um modelo de negócio diferente do praticado pelas concessionárias tradicionais, visando explorar as lacunas...</p>
+      </div>
+      <div style="margin: 10px; text-align: center;">
+          <a href="Startup.html"><img src="image/startup.png" alt="Responsive image" style="width: 70%;"></a>
+          <br>
+          <p class="h1">Startups com foco em veículos</p>
+          <p class="h6">O processo praticado por essas startups faz com que o valor da venda seja maior do que seria numa negociação com uma concessionária tradicional...</p>
+          
+        </div>
+      <div style="margin: 10px; text-align: center;">
+          <a href="Compra-online.html"><img src="image/Compra-online.jpg" alt="Responsive image" style="width: 60%;"></a>
+          <br>
+          <p class="h1">concessionária vs. comprar online</p>
+          <p class="h6">A Tudo Sobre Carros é um blog que surgiu com o objetivo de informar sobre o mundo automotivo. Com isso, pensando numa das decisões mais importantes que o brasileiro...</p>
+        </div>
+
+    </div>
+
+    
+      <br>
+
+      <div class="container" style="background-color: white;border-radius: 15px;width: 65%;">
+          <blockquote class="blockquote text-center">
+            <p class="h2">Quer receber ainda mais conteúdo gratuito como esse?</p>
+            <p class="mb-0">Cadastre e fique por dentro das novidades!</p>
+          </blockquote>
+            <form class="text-center" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+            <input  name="name"
+                    type="text"
+                    pattern="^\D{2,}\s[\D\s]{2,}$"
+                    title="Digite seu nome completo"
+                    style="border: unset;background-color: #EEEFED;border-radius: 8px;"
+                    placeholder="Nome completo"
+                    required >
+            
+            <input  name="email"
+                    type="email"
+                    style="border: unset;background-color: #EEEFED;border-radius: 8px;"
+                    title="Digite um email válido"
+                    required placeholder="E-mail">
+            <br>
+            <br>
+            <input type="submit" style="color:white; background-color: #FF5D54; border-color: #E05358; border-radius: 13px; width: 20%;">
+              <br><br>
+          </form>
+          
+          
+          <div class="bg-modal">
+            <div class="modal-content">
+              <div class="close">+</div>
+              <p class="h3">Se inscreva em nossa newsletter!</p> <br>
+              <p class="h4">Não iremos mandar spam, apenas o que acharmos de mais importante!</p>
+              <form class="text-center" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                
+                <input  name="name"
+                        type="text"
+                        pattern="^\D{2,}\s[\D\s]{2,}$"
+                        title="Digite seu nome completo"
+                        style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;"
+                        placeholder="Nome completo"
+                        required >
+                <br> <br>
+                <input  name="email"
+                        type="email"
+                        style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;"
+                        title="Digite um email válido"
+                        required placeholder="E-mail">
+                <br>
+                <br>
+                <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/home.html" />
+                <input type="submit" style="color:white; background-color: #FF5D54; border-color: #E05358; border-radius: 13px; width: 20%;">
+                  <br><br>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <br>
+      </div>
+
+  <div class="container-fluid" style="background-color: #FCDC72; width: auto;">
+    <br>
+    <img src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" style="display: block;margin-left: auto;margin-right: auto;width: 40%;">
+    <div class="row justify-content-md-center ">
+    <img src="image/whatsapp.png" alt="Responsive image" style="width: 4%;margin: 10px;">
+    <img src="image/facebook.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
+    <img src="image/instagram.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
+  </div>
+  <blockquote class="blockquote text-center">
+    <p class="mb-0">Desenvolvido por #Odara</p>
+  </blockquote>
+  </div>
+  </body>
+</html>
+<script>
+document.querySelector('.close').addEventListener('click' , 
+function(){
+  document.querySelector('.bg-modal').style.display = 'none';
+});
+</script>
