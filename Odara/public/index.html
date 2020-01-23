@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/CSS-home.css" type="text/css" sizes="max-width:720px; min-width: 520px">
-    <title>Tudodecarros</title>
 
-    <!--Style do Pop up-->
-    <style>
-      ::placeholder { 
-      color:black;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/CSS-home.css" type="text/css" sizes="max-width:720px; min-width: 520px">
+  <title>Tudodecarros</title>
+
+  <!--Style do Pop up-->
+  <style>
+    ::placeholder {
+      color: black;
       opacity: 1;
     }
-    .bg-modal{
+
+    .bg-modal {
       width: 100%;
       height: 300%;
-      background-color: rgb(0, 0, 0,0.7);
+      background-color: rgb(0, 0, 0, 0.7);
       position: absolute;
       left: 0;
       top: 0;
-      display: flex;  
+      display: flex;
       justify-content: center;
       align-items: flex-start;
     }
-    .modal-content{
+
+    .modal-content {
       width: 500px;
       height: 300px;
       background-color: white;
@@ -33,263 +37,270 @@
       text-align: center;
       padding: 20px;
     }
-    .close{
-      position:absolute;
+
+    .close {
+      position: absolute;
       top: 0;
       right: 14px;
       font-size: 42px;
       transform: rotate(45deg);
       cursor: pointer;
     }
-    </style>
 
-    <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-ND8CRJV');</script>
+ 
+  </style>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-ND8CRJV');</script>
   <!-- End Google Tag Manager -->
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <br><br>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <br><br>
 
-    <!--Logo-->
-    
-    <a href="index.html">
-    <img  src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" 
-    style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
-    </a>
-    <blockquote class="blockquote text-center">
-      <h3 class="blockquote-footer">Seu Blog sobre o mundo do automóvel</h3>
-    </blockquote>
-  </head>
-  <body>
+  <!--Logo-->
 
-    <!--Barra de navegação-->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Sobre nós<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Meu carro</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Testes</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Tendencias</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Como negociar</a>
-          </li>
-        </ul>
+  <a href="index.html">
+    <img src="image/Logotransp2.png" class="img-fluid" alt="Responsive image"
+      style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+  </a>
+  <blockquote class="blockquote text-center">
+    <h3 class="blockquote-footer">Seu Blog sobre o mundo do automóvel</h3>
+  </blockquote>
+</head>
+
+<body>
+
+  <!--Barra de navegação-->
+  <div class="container mb-4">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sobre nós<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Meu carro</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Testes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Tendencias</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Como negociar</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </div>
-  </div>
-  </div>
-    <br>
-    <br>
 
-    <!--Artigo principal no site-->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="image/Venda de carro.jpg" alt="">
-          </a>
+
+  <!--Artigo principal no site-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="image/Venda de carro.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 bg-light">
+        <h3>Algumas dicas para vender o seu carro usado</h3>
+        <p>Com a crise econômica vivida pelo país nos últimos anos, é comum imaginar que seria muito difícil conseguir
+          um comprador...</p>
+        <a class="btn btn-primary" href="Dicas de venda.html">Leia Mais</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--Primeiro formulario-->
+  <div class="container mb-3">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <p class="h2">COMO VENDER SEU CARRO NA INTERNET</p>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <p class="h5">Baixe seu e-book grátis</p>
+      </div>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-2">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="image/ebook.png" alt="">
+      </div>
+      <div class="col-md-6">
+        <form>
+          <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
+            method="POST">
+            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+              placeholder="Nome completo" required>
+          </div>
+          <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn btn-primary">Enviar</button></a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Galeria de artigos-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <a href="Mercado de semi.html"><img class="card-img-top" src="image/semi-novo-e-usado.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Mercado de seminovos</a>
+            </h4>
+            <p class="card-text">Existem algumas empresas que buscaram um modelo de negócio diferente do praticado pelas
+              concessionárias tradicionais, visando explorar as lacunas...</p>
+          </div>
         </div>
-        <div class="col-md-6 bg-light">
-          <h3>Algumas dicas para vender o seu carro usado</h3>
-          <p>Com a crise econômica vivida pelo país nos últimos anos, é comum imaginar que seria muito difícil conseguir um comprador...</p>
-          <a class="btn btn-primary" href="Dicas de venda.html">Leia Mais</a>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <a href="Startup.html"><img class="card-img-top" src="image/startup.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Startups com foco em veículos</a>
+            </h4>
+            <p class="card-text">O processo praticado por essas startups faz com que o valor da venda seja maior do que
+              seria numa negociação com uma concessionária tradicional...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <a href="Compra-online.html"><img class="card-img-top" src="image/Compra-online.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">concessionária vs. comprar online</a>
+            </h4>
+            <p class="card-text">A Tudo Sobre Carros é um blog que surgiu com o objetivo de informar sobre o mundo
+              automotivo. Com isso, pensando numa das decisões mais importantes que o brasileiro...</p>
+          </div>
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <!--Primeiro formulario-->
-    <div class="container mb-3">
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto"><p class="h2">COMO VENDER SEU CARRO NA INTERNET</p></div>
-      </div>
-      <div class="row justify-content-md-center">
-        <div class="col-md-auto"><p class="h5">Baixe seu e-book grátis</p></div>
-      </div>
-      <div class="row justify-content-md-center">
-        <div class="col-md-2">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="image/ebook.png" alt="">
-        </div>
-        <div class="col-md-6">
-          <form>
-            <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
-              <input  type="email"
-              name="email"
-              class="form-control"
-              placeholder="E-mail" 
-              required >
-            </div>
-            <div class="form-group">
-              <input type="text"
-                name="name"
-                class="form-control"
-                pattern="^\D{2,}\s[\D\s]{2,}$"
-                placeholder="Nome completo"
-                required >
-            </div>
-            <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn btn-primary">Enviar</button></a>
-          </form>
-        </div>
+  </div>
+
+  <!--Formulario do final da pagina-->
+  <div class="container mb-3">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <p class="h2">Quer receber ainda mais conteúdo gratuito como esse?</p>
       </div>
     </div>
-      <!--Galeria de artigos-->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <a href="Mercado de semi.html"><img class="card-img-top" src="image/semi-novo-e-usado.png" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Mercado de seminovos</a>
-                </h4>
-                <p class="card-text">Existem algumas empresas que buscaram um modelo de negócio diferente do praticado pelas concessionárias tradicionais, visando explorar as lacunas...</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <a href="Startup.html"><img class="card-img-top" src="image/startup.png" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Startups com foco em veículos</a>
-                </h4>
-                <p class="card-text">O processo praticado por essas startups faz com que o valor da venda seja maior do que seria numa negociação com uma concessionária tradicional...</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="card h-100">
-              <a href="Compra-online.html"><img class="card-img-top" src="image/Compra-online.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">concessionária vs. comprar online</a>
-                </h4>
-                <p class="card-text">A Tudo Sobre Carros é um blog que surgiu com o objetivo de informar sobre o mundo automotivo. Com isso, pensando numa das decisões mais importantes que o brasileiro...</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <p class="h5">Cadastre e fique por dentro das novidades!</p>
       </div>
-
-    <!--Formulario do final da pagina-->
-      <div class="container mb-3">
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto"><p class="h2">Quer receber ainda mais conteúdo gratuito como esse?</p></div>
-        </div>
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto"><p class="h5">Cadastre e fique por dentro das novidades!</p></div>
-        </div>
-        <div class="row justify-content-md-center">
-          <div class="col-md-5">
-            <form>
-              <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
-                <input  type="email"
-                name="email"
-                class="form-control"
-                placeholder="E-mail" 
-                required >
-              </div>
-              <div class="form-group">
-                <input type="text"
-                  name="name"
-                  class="form-control"
-                  pattern="^\D{2,}\s[\D\s]{2,}$"
-                  placeholder="Nome completo"
-                  required >
-              </div>
-              <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn btn-primary">Enviar</button></a>
-            </form>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-5">
+        <form>
+          <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
+            method="POST">
+            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
           </div>
-        </div>
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+              placeholder="Nome completo" required>
+          </div>
+          <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn btn-primary">Enviar</button></a>
+        </form>
       </div>
+    </div>
+  </div>
 
-          <!--Pop up-->
+  <!--Pop up-->
 
-          <div class="bg-modal">
-            <div class="modal-content">
-              <div class="close">+</div>
-              <p class="h3">Se inscreva para receber nosso Ebook gratuito!</p> <br>
-              <p class="h4">Saiba como vender seu carro!</p>
-              <form class="text-center" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
-                
-                <input  name="name"
-                        type="text"
-                        pattern="^\D{2,}\s[\D\s]{2,}$"
-                        title="Digite seu nome completo"
-                        style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;"
-                        placeholder="Nome completo"
-                        required >
-                <br> <br>
-                <input  name="email"
-                        type="email"
-                        style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;"
-                        title="Digite um email válido"
-                        required placeholder="E-mail">
-                <br>
-                <br>
-                <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/home.html" />
-              <a href="Ebooks/Ebook1_Odara_STL.pdf"><input type="submit" style="color:white; background-color: #FF5D54; border-color: #E05358; border-radius: 13px; width: 20%;"></a>
-                  <br><br>
-              </form>
-            </div>
-          </div>
-        <!--Esta div esta seprando a barrega de navegação do final da pagina-->
-        <!--IIIIIII-->
+  <div class="bg-modal">
+    <div class="modal-content">
+      <div class="close">+</div>
+      <p class="h3">Se inscreva para receber nosso Ebook gratuito!</p> <br>
+      <p class="h4">Saiba como vender seu carro!</p>
+      <form class="text-center" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
+        method="POST">
 
-      <!--Container do final da pgina(inferio amarelo)-->
+        <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
+          style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;" placeholder="Nome completo"
+          required>
+        <br> <br>
+        <input name="email" type="email"
+          style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;"
+          title="Digite um email válido" required placeholder="E-mail">
+        <br>
+        <br>
+        <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/home.html" />
+        <a href="Ebooks/Ebook1_Odara_STL.pdf"><input type="submit"
+            style="color:white; background-color: #FF5D54; border-color: #E05358; border-radius: 13px; width: 20%;"></a>
+        <br><br>
+      </form>
+    </div>
+  </div>
+  <!--Esta div esta seprando a barrega de navegação do final da pagina-->
+  <!--IIIIIII-->
+
+  <!--Container do final da pgina(inferio amarelo)-->
   <div class="container-fluid" style="background-color: #FCDC72; width: auto;">
     <br>
-    <img src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" style="display: block;margin-left: auto;margin-right: auto;width: 40%;">
+    <img src="image/Logotransp2.png" class="img-fluid" alt="Responsive image"
+      style="display: block;margin-left: auto;margin-right: auto;width: 40%;">
     <div class="row justify-content-md-center ">
-    <img src="image/whatsapp.png" alt="Responsive image" style="width: 4%;margin: 10px;">
-    <img src="image/facebook.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
-    <img src="image/instagram.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
-  </div>
-  <blockquote class="blockquote text-center">
-    <p class="mb-0">Desenvolvido por #Odara</p>
-  </blockquote>
+      <img src="image/whatsapp.png" alt="Responsive image" style="width: 4%;margin: 10px;">
+      <img src="image/facebook.png" alt="Responsive image" style="width: 4%;margin: 10px;">
+      <img src="image/instagram.png" alt="Responsive image" style="width: 4%;margin: 10px;">
+    </div>
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">Desenvolvido por #Odara</p>
+    </blockquote>
   </div>
 
 
-  
+
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND8CRJV"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND8CRJV" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  </body>
+</body>
+
 </html>
 <script>
-document.querySelector('.close').addEventListener('click' , 
-function(){
-  document.querySelector('.bg-modal').style.display = 'none';
-});
+  document.querySelector('.close').addEventListener('click',
+    function () {
+      document.querySelector('.bg-modal').style.display = 'none';
+    });
 </script>
