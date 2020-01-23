@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="image/Roda.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -67,10 +68,24 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Modal body text goes here.</p>
+          <blockquote class="blockquote text-center">
+          <p>Quer saber como vender o seu carro?</p>
+          <p>Baixe nosso e-book gratuito!</p>
+        </blockquote>
+
+        <form>
+          <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
+            method="POST">
+            <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+            placeholder="Nome completo" required>
+          </div>
+          <div class="form-group">
+            <a href="Ebook/Ebook1_Odara_STL.pdf"><input type="email" name="email" class="form-control" placeholder="E-mail" required></a>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Baixar</button>
+        <div class=" row justify-content-center mb-4">
+          <button type="submit" class="btn btn-primary col-4" >Baixar</button>
+        </form>
         </div>
       </div>
     </div>
@@ -137,20 +152,22 @@
       </div>
     </div>
     <div class="row justify-content-md-center">
-      <div class="col-md-2">
+      <div class="col-md-1">
         <img class="img-fluid rounded mb-3 mb-md-0" src="image/ebook.png" alt="">
       </div>
       <div class="col-md-6">
         <form>
           <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
             method="POST">
-            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+              <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+            placeholder="Nome completo" required>
           </div>
           <div class="form-group">
-            <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
-              placeholder="Nome completo" required>
+              <input type="email" name="email" class="form-control" placeholder="E-mail" required>
           </div>
-          <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn btn-primary">Enviar</button></a>
+          <div class="row justify-content-center mb-4">
+          <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn-primary">Enviar</button></a>
+          </div>
         </form>
       </div>
     </div>
@@ -238,10 +255,13 @@
     <br>
     <img src="image/Logotransp2.png" class="img-fluid" alt="Responsive image"
       style="display: block;margin-left: auto;margin-right: auto;width: 40%;">
-    <div class="row justify-content-md-center ">
-      <img src="image/whatsapp.png" alt="Responsive image" style="width: 4%;margin: 10px;">
-      <img src="image/facebook.png" alt="Responsive image" style="width: 4%;margin: 10px;">
-      <img src="image/instagram.png" alt="Responsive image" style="width: 4%;margin: 10px;">
+    <div class="container">>
+        
+      <img src="image/whatsapp.png" alt="Responsive image" style="width: 5%;margin: 10px;">
+      <img src="image/facebook.png" alt="Responsive image" style="width: 5%;margin: 10px;">
+      <img src="image/instagram.png" alt="Responsive image" style="width: 5%;margin: 10px;">
+    
+      </div>
     </div>
     <blockquote class="blockquote text-center">
       <p class="mb-0">Desenvolvido por #Odara</p>
