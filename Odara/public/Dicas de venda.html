@@ -90,9 +90,8 @@
           </div>
           <div class="row justify-content-md-center">
             <div class="col-md-10">
-              <form>
-                <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
-                  method="POST">
+              <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                <div class="form-group">
                     <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
                   placeholder="Nome completo" required>
                 </div>
@@ -100,7 +99,9 @@
                     <input type="email" name="email" class="form-control" placeholder="E-mail" required>
                 </div>
                 <div class="row justify-content-center mb-4">
-                <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn-primary">Baixar</button></a>
+                <a href="Ebooks/Ebook1_Odara_STL.pdf">
+                  <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
+                  <input type="submit" class="btn btn-primary" id="botton"></a>
                 </div>
               </form>
             </div>
@@ -143,9 +144,8 @@
           </div>
           <div class="row justify-content-md-center">
             <div class="col-md-6">
-              <form>
-                <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
-                  method="POST">
+              <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                <div class="form-group">
                     <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
                   placeholder="Nome completo" required>
                 </div>
@@ -153,7 +153,9 @@
                     <input type="email" name="email" class="form-control" placeholder="E-mail" required>
                 </div>
                 <div class="row justify-content-center mb-4">
-                <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn-primary">Enviar</button></a>
+                <a href="Ebooks/Ebook1_Odara_STL.pdf">
+                  <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
+                  <input type="submit" class="btn btn-primary" id="botton"></a>
                 </div>
               </form>
             </div>
