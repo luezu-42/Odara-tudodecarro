@@ -237,29 +237,36 @@
           <div class="bg-modal">
             <div class="modal-content">
               <div class="close">+</div>
-              <p class="h3">Se inscreva para receber nosso Ebook gratuito!</p> <br>
-              <p class="h4">Saiba como vender seu carro!</p>
-              <form class="text-center" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
-                
-                <input  name="name"
-                        type="text"
-                        pattern="^\D{2,}\s[\D\s]{2,}$"
-                        title="Digite seu nome completo"
-                        style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;"
-                        placeholder="Nome completo"
-                        required >
-                <br> <br>
-                <input  name="email"
-                        type="email"
-                        style="border: unset;background-color: #EEEFED;border-radius: 8px;height: 30px;"
-                        title="Digite um email válido"
-                        required placeholder="E-mail">
-                <br>
-                <br>
-                <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/home.html" />
-              <a href="Ebooks/Ebook1_Odara_STL.pdf"><input type="submit" style="color:white; background-color: #FF5D54; border-color: #E05358; border-radius: 13px; width: 20%;"></a>
-                  <br><br>
-              </form>
+              <div class="container mb-3">
+                <div class="row justify-content-md-center">
+                  <div class="col-md-auto"><p class="h2">Saiba vender o seu carro!</p></div>
+                </div>
+                <div class="row justify-content-md-center">
+                  <div class="col-md-auto"><p class="h5">Recebe nosso e-book gratuito!</p></div>
+                </div>
+                <div class="row justify-content-md-center">
+                  <div class="col-md-5">
+                    <form>
+                      <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                        <input type="text"
+                          name="name"
+                          class="form-control"
+                          pattern="^\D{2,}\s[\D\s]{2,}$"
+                          placeholder="Nome completo"
+                          required > 
+                      </div>
+                      <div class="form-group">
+                        <input  type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="E-mail" 
+                            required >
+                      </div>
+                      <a href="Ebooks/Ebook1_Odara_STL.pdf"><button type="submit" class="btn btn-primary">Enviar</button></a>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         <!--Esta div esta seprando a barrega de navegação do final da pagina-->
