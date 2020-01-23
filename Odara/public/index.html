@@ -26,14 +26,9 @@
     })(window, document, 'script', 'dataLayer', 'GTM-ND8CRJV');</script>
   <!-- End Google Tag Manager -->
   <!-- update the version number as needed -->
-  <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
-  <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
-  <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
+
   <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -76,11 +71,11 @@
         <form>
           <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
             method="POST">
-            <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+            <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
             placeholder="Nome completo" required>
           </div>
           <div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+            <input type="email" title="Digite um email válido" name="email" class="form-control" placeholder="E-mail" required>
           </div>
         </div>
         <div class=" row justify-content-center mb-4">
