@@ -68,9 +68,8 @@
           <p>Baixe nosso e-book gratuito!</p>
         </blockquote>
 
-        <form>
-          <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
-            method="POST">
+        <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+          <div class="form-group">
             <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
             placeholder="Nome completo" required>
           </div>
@@ -79,9 +78,8 @@
           </div>
         </div>
         <div class=" row justify-content-center mb-4">
-          <a href="Ebook/Ebook1_Odara_STL.pdf">
+          <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
           <input type="submit" class="btn btn-primary" >
-          </a>
         </form>
         </div>
       </div>
@@ -153,9 +151,8 @@
         <img class="img-fluid rounded mb-3 mb-md-0" style="max-width: 80px;" src="image/ebook.png" alt="">
       </div>
       <div class="col-md-6">
-        <form>
-          <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
-            method="POST">
+        <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+          <div class="form-group">
               <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
             placeholder="Nome completo" required>
           </div>
@@ -163,7 +160,9 @@
               <input type="email" name="email" class="form-control" placeholder="E-mail" required>
           </div>
           <div class="row justify-content-center mb-4">
-          <a href="Ebooks/Ebook1_Odara_STL.pdf"><input type="submit" class="btn btn-primary"></a>
+          <a href="Ebooks/Ebook1_Odara_STL.pdf">
+            <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
+            <input type="submit" class="btn btn-primary"></a>
           </div>
         </form>
       </div>
@@ -228,16 +227,15 @@
         <img class="img-fluid rounded mb-3 mb-md-0" style="max-width: 100px;" src="image/car_animation.gif" alt="">
       </div>
       <div class="col-md-5">
-        <form>
-          <div class="form-group" action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef"
-            method="POST">
+        <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+          <div class="form-group" >
             <input type="email" name="email" class="form-control" placeholder="E-mail" required>
           </div>
           <div class="form-group">
             <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
               placeholder="Nome completo" required>
           </div>
-          <a href="Ebooks/Ebook1_Odara_STL.pdf"><input type="submit" class="btn btn-primary"></a>
+            <input type="submit" class="btn btn-primary">
         </form>
       </div>
     </div>
@@ -256,7 +254,7 @@
       </div>
     </div>
 
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center mb-2">
       <div class="col-md-auto">
         <img style="width:80px;"class="img-responsive" src="image/whatsapp.png" alt="Responsive image">
       </div>
