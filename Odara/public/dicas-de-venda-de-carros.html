@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/Roda.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Tudodecarros</title>
+    <style>
+      ::placeholder { 
+      color:black;
+      opacity: 1;
+}
+    </style>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-ND8CRJV');</script>
+  <!-- End Google Tag Manager -->
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <br><br>
+    <a href="index.html">
+        <img  src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" 
+        style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+        </a>
+    <blockquote class="blockquote text-center">
+      <h3 class="blockquote-footer">Seu Blog sobre o mundo do automóvel</h3>
+    </blockquote>
+  </head>
+  <body>
+    <div class="container mb-4">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nós<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meu carro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tendencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Como negociar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-8">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="image/Venda de carro.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 bg-light"> <br><br><br> <div class="container mb-3">
+          <div class="row justify-content-center">
+            <div class="col-md-auto">
+              <p class="h5">Como vender seu carro na internet</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <p class="h5">Baixe seu e-book grátis</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+                  placeholder="Nome completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="row justify-content-center mb-4">
+                <a href="Ebooks/Ebook1_Odara_STL.pdf">
+                  <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
+                  <input type="submit" class="btn btn-primary" id="envio"></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <p class="h2 mb-4">Algumas dicas para vender o seu carro usado</p>
+
+        <p class="lead mb-1">Com a crise econômica vivida pelo país nos últimos anos, é comum imaginar que seria muito difícil conseguir um comprador para seu veículo usado. Na verdade, não é bem assim. </p>
+        
+        <p class="lead mb-1">Você sabia que no mercado de automóveis usados de janeiro a maio de 2017, por exemplo, para cada carro 0km, dois seminovos foram vendidos? segundo matéria publicada no blog o tempo, a procura por carros com mais de 9 anos de uso aumentou 52%.</p>
+
+        <p class="lead mb-1">Sendo assim, podemos notar que não está tão difícil assim vender o seu carro usado, pensando nisso, pensamos em algumas dicas que podem ajudar vocês na hora de vender o seu automóvel. </p>
+
+        <p class="h2 mb-4">Atenção ao mercado e a tabela fipe</p>
+
+        <p class="lead mb-1">Em primeiro lugar é importante estar atento ao mercado, sempre leve em consideração a tabela fipe, mas tome cuidado para não cometer alguns equívocos. </p>
+      
+        <p class="lead mb-1">A tabela fipe corresponde ao valor da média dos veículos vendidos, portanto ele não corresponde a uma conversão exata do valor de cada automóvel. </p>
+     
+        <p class="lead mb-3">Alguns fatores como a quilometragem, vistorias realizadas dentro do prazo correto e o próprio aspecto do veiculo podem impactar no valor de venda desse automóvel.</p>
+        
+
+        <div class="container mb-3">
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <p class="h3">COMO VENDER SEU CARRO NA INTERNET</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <p class="h5">Baixe seu e-book grátis</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-6">
+              <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+                  placeholder="Nome completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="row justify-content-center mb-4">
+                <a href="Ebooks/Ebook1_Odara_STL.pdf">
+                  <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
+                  <input type="submit" id="envio" class="btn btn-primary" id="botton"></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <p class="h2 mb-4">Documentação em dia muitas vezes é um diferencial  </p>
+
+        <p class="lead mb-3">Certamente esse é um ponto muito importante, a situação da documentação do seu veiculo é crucial para conseguir finalizar uma venda, afinal ninguém quer comprar um carro e precisar correr para acertar a documentação do veículo.</p>
+
+        <p class="h2 mb-4">Estude meios de divulgar o seu veículo. </p>
+
+        <p class="lead mb-3">Essa dica parece simples, mas é importante caprichar nas fotos e na limpeza do seu automóvel, no momento de anuncia-lo na internet. São diversos os sites onde você pode anunciar um veículo ao invés de perder tempo indo em feiras ou leilões.</p>
+      
+        <p class="h2 mb-4">Estude empresas que façam compra e venda de veículos de forma digital</p>
+
+        <p class="lead mb-3">Essa é uma das dicas mais legais, estamos em 2020, ou seja, já existem meios digitais de vender e comprar um automóvel, algumas startups fazem esse tipo de serviço e normalmente pagam um valor mais justo pelo automóvel em relação ao que praticam as concessionárias clássicas.</p>
+      
+        <p class="lead mb-3">Tudo feito através de um cadastro nos sites e um agendamento para avaliação, caso aprovado na avaliação o veiculo pode ser vendido a empresa ou utilizado como base de troca. </p>
+      
+        <p class="lead mb-3">Também é possível anunciar o seu veículo nessas plataformas, geralmente eles cobram um percentual sobre a venda do veículo, mas realizam todo o trabalho de divulgação e da venda em si. Ou seja, você praticamente não tem trabalho nenhum.  </p>
+      </div>
+      <div class="col-sm-2">
+
+
+<div class="container">
+        <div class="row">
+          <div class="card-img-top mb-4">
+            <a href="compra-online.html"><img src="image/Compra-online.jpg" style="max-width: 400px;" alt="">
+            <p class="card-text">Compras online</p></a>
+          </div>
+          <div class="card-img-top mb-4">
+            <a href="mercado-de-seminovos.html"><img src="image/semi-novo-e-usado.png" style="max-width: 400px;" alt="">
+            <p class="card-text">Semi novo e usados</p></a>
+          </div>
+          <div class="card-img-top mb-4">
+            <a href="startup.html"><img src="image/startup.png" style="max-width: 400px;" alt="">
+            <p class="card-text">Startup</p></a>
+          </div>
+        
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+      </div>
+    </div>
+    </div>
+    </div>
+<div class="container-fluid" style="background-color: #FCDC72; width: auto;">
+  <br>
+  <img src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" style="display: block;margin-left: auto;margin-right: auto;width: 40%;">
+  <div class="row justify-content-md-center ">
+  <img src="image/whatsapp.png" alt="Responsive image" style="width: 4%;margin: 10px;">
+  <img src="image/facebook.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
+  <img src="image/instagram.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
+</div>
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Desenvolvido por #Odara</p>
+</blockquote>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND8CRJV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
