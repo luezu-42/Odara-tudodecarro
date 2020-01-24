@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/Roda.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Tudodecarros</title>
+    <style>
+      ::placeholder { 
+      color:black;
+      opacity: 1;
+}
+    </style>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-ND8CRJV');</script>
+  <!-- End Google Tag Manager -->
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <br><br>
+    <a href="index.html">
+        <img  src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" 
+        style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+        </a>
+    <blockquote class="blockquote text-center">
+      <h3 class="blockquote-footer">Seu Blog sobre o mundo do automóvel</h3>
+    </blockquote>
+  </head>
+  <body>
+    <div class="container mb-4">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nós<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meu carro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tendencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Como negociar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-8">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="image/semi-novo-e-usado.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 bg-light"> <br><br><br> <div class="container mb-3">
+          <div class="row justify-content-center">
+            <div class="col-md-auto">
+              <p class="h5">Como vender seu carro na internet</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <p class="h5">Baixe seu e-book grátis</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+                  placeholder="Nome completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="row justify-content-center mb-4">
+                <a href="Ebooks/Ebook1_Odara_STL.pdf">
+                  <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
+                  <input type="submit" id="envio" class="btn btn-primary"></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <p class="h2 mb-4">Como comprar um carro seminovo  com segurança</p>
+
+        <p class="lead mb-1">    Atualmente, muita gente tem optado pelos automóveis seminovos. Os principais motivos, que explicam essa maior procura são:</p>
+        
+        <li class="lead mb-1">o preço elevado dos 0 Km;</li>
+
+        <li class="lead mb-1">•	a depreciação/desvalorização que eles sofrem após sair da concessionária.</li>
+
+
+        <div class="container mb-3">
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <p class="h3">COMO VENDER SEU CARRO NA INTERNET</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <p class="h5">Baixe seu e-book grátis</p>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-6">
+              <form action="https://smtl.gama.academy/leads/3d932b81-39f4-11ea-a319-e90cfbc180ef" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" pattern="^\D{2,}\s[\D\s]{2,}$"
+                  placeholder="Nome completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="row justify-content-center mb-4">
+                <a href="Ebooks/Ebook1_Odara_STL.pdf">
+                  <input name="redirectTo" type="hidden" value="https://tudodecarro.com.br/Ebook/Ebook1_Odara_STL.pdf" />
+                  <input type="submit" id="envio" class="btn btn-primary"></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <li class="lead mb-3">No entanto, para comprar um carro seminovo   com tranquilidade e segurança é preciso considerar alguns fatores. Pensando nisso, reunimos neste post algumas dicas para ajudá-lo a fazer a melhor escolha. Confira:</li>
+
+        <p class="h2 mb-4">Conheça as condições mecânicas do carro</p>
+
+        <p class="lead mb-3">Ainda que o veículo tenha passado por diversas revisões, é preciso conhecer suas condições mecânicas na hora da compra. Exija essas informações diretamente com o vendedor e realize um test drive.
+          Dirija o carro para que você consiga avaliar o seu desempenho. Verifique a condição do sistema de transmissão, o barulho do motor, alinhamento, suspensão e freios.
+          </p>
+
+          <p class="lead mb-3">Para fazer uma avaliação minuciosa, leve-o até um mecânico de confiança. Assim, você obterá um resultado mais preciso sobre a situação do seminovo, evitando problemas no futuro.
+            </p>
+
+            <p class="h2 mb-4">Verifique a documentação e a procedência do veículo</p>
+            
+            <p class="lead mb-3">Se você se interessou por um modelo em específico, é muito importante verificar se a documentação do automóvel está em ordem. Confira também se ele possui pendências, como impostos e multas a serem pagas. Você pode fazer isso acessando o site do Detran do estado que consta na placa do veículo. Nos sites do Detran-SP e Detran-RJ você consegue fazer essa consulta logo na página inicial.</p>
+
+            <p class="h2 mb-4">Pesquise bastante</p>
+
+            <p class="lead mb-3">Pesquise muito antes de fechar qualquer negócio. Desconfie se surgirem propostas “mirabolantes”, verifique antes a procedência do que está sendo oferecido. </p>
+
+            <p class="lead mb-3">O valor dos automóveis pode variar bastante e você pode conseguir um excelente negócio. Conheça o carro pessoalmente, não efetue a compra somente a partir de descrições e fotos. Tente controlar a ansiedade que esse processo pode gerar para fazer um bom negócio.	</p>
+
+            <p class="h2">Histórico de revisões</p>
+
+            <p class="lead mb-3">A realização das revisões programadas pela concessionária é fundamental e precisa ser considerada quando você for comprar um carro seminovo. </p>
+      
+            <p class="lead mb-3">Esse tipo de vistoria visa garantir que o automóvel esteja sempre em boas condições de uso, assim como quando saiu da loja pela primeira vez.</p>
+      
+            <p class="lead mb-3">Vale lembrar que o histórico de revisão pode ser visto no manual do proprietário do automóvel. Lá deverão estar os carimbos comprovando que ele foi vistoriado. Fique atento!</p>
+      
+            <p class="h2 mb-4">03 DICAS COMPLEMENTARES PARA VOCÊ COMPRAR SEU CARRO SEMINOVO COM SEGURANÇA.</p>
+          
+            <p class="h2 mb-2">1 – PRESTAR ATENÇÃO AOS VIDROS</p>
+
+            <p class="lead mb-3">Um dos grandes vilões na hora de comprar um carro seminovo é o medo de acabar adquirindo um carro recuperado de sinistro. Um truque simples e fácil para se livrar dessa roubada é verificar todos os vidros dos carros. </p>
+          
+            <p class="lead mb-4">Por lei, todos os vidros devem ter a inscrição do número do chassi. Em uma olhada rápida você já pode identificar se algum dos vidros foi trocado e, com isso, descobrir que as condições do veículo já não são totalmente originais.</p>
+          
+            <p class="h2 mb-2">2 – VERIFICAR A PINTURA</p>
+
+            <p class="lead mb-4">Não se deixe enganar pelo aparente banho de loja, por aquela bela encerada na lataria e pintura. Dê uma volta completa no carro, procure por imperfeições na pintura, como diferença de tonalidade e textura. Diferença de alinhamento nas portas, capô e porta-malas vão te revelar possíveis trabalhos de recuperação na chapeação e pintura.</p>
+
+            <p class="h2 mb-2">3 – HISTÓRICO DE ENCHENTES</p>
+            <p class="lead mb-3">Carros que foram afetados por enchentes são facilmente recuperados e colocados à disposição novamente no mercado dos seminovos. Um bom indício de que um carro seminovo é recuperado de enchente é um forte odor de poeira e mofo. Se você encontrar muitos daqueles sachês de perfume para automóveis dentro do carro, desconfie, eles devem estar tentando esconder odores indesejados. Outra dica importante é verificar debaixo do estepe, geralmente carros recuperados de enchente tem a lataria meio podre, e o macaco e a chave de roda tendem a ser enferrujados.</p>
+          </div>
+      <div class="col-sm-2">
+
+
+<div class="container">
+        <div class="row">
+          <div class="card-img-top mb-4">
+            <a href="Compra-online.html"><img src="image/Compra-online.jpg" style="max-width: 400px;" alt="">
+            <p class="card-text">Compras online</p></a>
+          </div>
+          <div class="card-img-top mb-4">
+            <a href="Dicas de venda.html"><img src="image/Venda de carro.jpg" style="max-width: 400px;" alt="">
+            <p class="card-text">Dicas de venda</p></a>
+          </div>
+          <div class="card-img-top mb-4">
+            <a href="Startup.html"><img src="image/startup.png" style="max-width: 400px;" alt="">
+            <p class="card-text">Startup</p></a>
+          </div>
+        
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+      </div>
+    </div>
+    </div>
+    </div>
+<div class="container-fluid" style="background-color: #FCDC72; width: auto;">
+  <br>
+  <img src="image/Logotransp2.png" class="img-fluid" alt="Responsive image" style="display: block;margin-left: auto;margin-right: auto;width: 40%;">
+  <div class="row justify-content-md-center ">
+  <img src="image/whatsapp.png" alt="Responsive image" style="width: 4%;margin: 10px;">
+  <img src="image/facebook.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
+  <img src="image/instagram.png"  alt="Responsive image" style="width: 4%;margin: 10px;">
+</div>
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Desenvolvido por #Odara</p>
+</blockquote>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND8CRJV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
